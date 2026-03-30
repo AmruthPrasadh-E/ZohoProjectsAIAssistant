@@ -1,0 +1,22 @@
+# Rename or edit file to .env with the required keys.
+ZOHO_DEBUG=0 
+# (1 for UI Debug mode)
+ZOHO_ACCESS_TOKEN=<YOUR ACCESS TOKEN FROM UI>
+ZOHO_ACCOUNTS_SERVER=<'https://accounts.zoho.in'>
+
+# ── Zoho OAuth 2.0 ──────────────────────────────────────────────────────────
+# Register your app at https://api-console.zoho.com/ → Server-based Applications
+ZOHO_CLIENT_ID=<YOUR_ZOHO_CLIENT_ID>
+ZOHO_CLIENT_SECRET=<YOUR_ZOHO_CLIENT_SECRET>
+
+# Must match the Authorized Redirect URI in your Zoho API Console
+ZOHO_REDIRECT_URI='http://localhost:8501/'
+
+# Zoho data center: com | eu | in | com.au | jp
+ZOHO_DC='com'
+# ── Ollama ───────────────────────────────────────────────────────────────────
+# URL where Ollama is listening (default local install)
+OLLAMA_BASE_URL='http://localhost:11434'
+
+# Model to use — must be pulled first:  ollama pull llama3
+OLLAMA_MODEL='llama3'
